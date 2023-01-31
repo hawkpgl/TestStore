@@ -22,12 +22,16 @@ Just execute the solution, and Swagger interface should show up in the browser. 
 - EntityFramework Core In-Memory Database
 - MediatR
 - AutoMapper
-
+- FluentValidation
+- Moq
+- Swagger
+- xUnit
+- 
 ## Architecture
 - DDD
 - SOLID
 - N-Layer
 - CQRS
 - Generic Repository
-- Unit Testing in xUnit with Moq
+- Unit Testing
 - Entity Validation Pattern
