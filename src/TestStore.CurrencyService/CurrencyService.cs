@@ -22,7 +22,7 @@ namespace TestStore.CurrencyService
             
             if (currency.Length != 3) throw new Exception($"Invalid currency format. Currency should in 3 letters format. I.e.: \"GBP\". Value provided: {currency}");
 
-            var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get, string.Format(_configuration["CurrencyLayer:APIKey"], currency, value))
+            var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get, string.Format(_configuration["CurrencyLayer:apiUrl"], currency, value))
             {
                 Headers = { { "apikey", _configuration["CurrencyLayer:APIKey"] } }
             };

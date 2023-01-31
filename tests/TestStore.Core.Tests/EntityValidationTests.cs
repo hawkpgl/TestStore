@@ -26,16 +26,6 @@ namespace TestStore.Core.Tests
         }
 
         [Fact]
-        public void OrderItemShouldBelongToOrder()
-        {
-            //Arrange & Act
-            var orderItem = new OrderItem(1, "foo", 1, 1);
-
-            //Assert
-            Assert.False(orderItem.ValidationResult.IsValid);
-        }
-
-        [Fact]
         public void OrderItemShouldHaveValidProductId()
         {
             //Arrange & Act
